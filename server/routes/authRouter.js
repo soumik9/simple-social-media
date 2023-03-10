@@ -9,6 +9,4 @@ router.get('/user/me', verifyLogin, AuthController.profile);
 router.post('/user/signup', AuthController.signup);
 router.post('/user/login', AuthController.login);
 
-
-
 module.exports = router;

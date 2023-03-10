@@ -19,32 +19,32 @@ const login = async (req, res) => {
     const { email, password } = req.body;
 
     // checking email and password given
-    if(!email || !password) return res.status(500).send({ message: 'Credential mismatch!', success: false });
+    if(!email || !password) return res.send({ message: 'Credential mismatch!', success: false });
 
     // checking is user registred
     const user = await User.findOne({ email });
-    if(!user) return res.status(404).send({ message: 'User not found!', success: false });
+    if(!user) return res.send({ message: 'User not found!', success: false });
 
     // comparing password
     const isPasswordValid = user.comparePassword(password, user.password);
-    if(!isPasswordValid) return res.status(403).send({ message: 'Password not matched!', success: false });
+    if(!isPasswordValid) return res.send({ message: 'Password not matched!', success: false });
 
     // token
     const token = generateToken(user);
 
     const { password: pwd, ...others } = user.toObject();
-    res.status(200).send({ data:{ user: others, token }, message: 'Successfully logged!', success: true });
+    res.send({ data:{ user: others, token }, message: 'Successfully logged!', success: true });
   } catch (error) {
-    res.status(500).send({ error: error.message, message: 'Server side error', success: false });
+    res.send({ error: error.message, message: 'Server side error', success: false });
   }
 }
 
 const profile = async (req, res) => {
   try {
     const user = await User.findOne({ email: req.user?.email });
-    res.status(200).send({data: user, message: 'Successfully get user data!', success: true });
+    res.send({data: user, message: 'Successfully get user data!', success: true });
   } catch (error) {
-    res.status(500).send({ error: error.message, message: 'Server side error', success: false });
+    res.send({ error: error.message, message: 'Server side error', success: false });
   }
 }
 
