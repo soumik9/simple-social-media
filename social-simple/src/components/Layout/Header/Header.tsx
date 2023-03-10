@@ -29,7 +29,7 @@ const Header = (props: Props) => {
         <>
             <div
                 className={cx(
-                    " py-2 w-full z-[999] bg-bgDark shadow-[15px_-1px_10px_rgba(166,166,166,0.25)] fixed top-0 left-0"
+                    "py-2.5 md:py-1 w-full z-[999] bg-bgDark shadow-[15px_-1px_10px_rgba(166,166,166,0.25)] fixed top-0 left-0"
                 )}
             >
                 <div className="container">
@@ -41,9 +41,9 @@ const Header = (props: Props) => {
                                 <a
                                     href='#'
                                     aria-label='Soumik Ahammed'
-                                    className='h-[40px] w-[40px] bg-primary flex items-center justify-center rounded-[8px]'
+                                    className='w-max px-3 py-1 bg-primary flex items-center justify-center rounded-[8px]'
                                 >
-                                    <span className='text-[32px] text-lightDark'>S</span>
+                                    <span className='text-[20px] text-white'>Social Buzz</span>
                                 </a>
                             </Link>
 

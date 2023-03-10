@@ -10,10 +10,10 @@ const LandingLayout = ({ children }: Props) => {
     return (
         <>
             {/* Header space fillout section-- */}
-            <div className="lg:h-[80px] h-[55px]" ></div >
+            <div className="lg:h-[70px] h-[50px]" ></div >
             <Header />
             {children}
-            {/* <Footer /> */}
+            <Footer />
         </>
     )
 }

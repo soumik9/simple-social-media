@@ -41,3 +41,36 @@ export const navItems: navItemType[] = [
         url: contactUrl
     },
 ]
+
+export const footerUserfulItems: navItemType[] = [
+    {
+        _id: 'footUseful_1',
+        title: 'About',
+        url: aboutUrl,
+    },
+    {
+        _id: 'footUseful_2',
+        title: 'Case Study',
+        url: caseStudyUrl,
+    },
+    {
+        _id: 'footUseful_3',
+        title: 'Contact Me',
+        url: contactUrl,
+    },  
+    {
+        _id: 'footUseful_4',
+        title: 'Terms & Conditions',
+        url: contactUrl,
+    },  
+    {
+        _id: 'footUseful_5',
+        title: 'Privacy & Policy',
+        url: contactUrl,
+    },  
+    {
+        _id: 'footUseful_6',
+        title: 'Contact Us',
+        url: contactUrl,
+    },
+]
