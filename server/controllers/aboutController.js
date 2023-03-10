@@ -5,8 +5,10 @@ const get = async (req, res) => {
     try {
         // database query
         const datas = await About.find();
-        res.send({ message: 'Successfully loaded data', success: true, data: datas[0] });
+        console.log(datas)
+        res.send({ message: 'Successfully loaded data', success: true, data: datas.length ? datas[0] : [] });
     } catch (error) {
+        console.log(error.message)
         res.send({ error: error.message, message: 'Server side error', success: false });
     }
 }
@@ -14,10 +16,12 @@ const get = async (req, res) => {
 const update = async (req, res) => {
     try {
 
+        console.log('hi')
+
         const aboutDatas = await About.find();
 
         // checking length
-        if (aboutDatas.length > 1) return res.send({ message: 'Already data is there!' });
+        // if (aboutDatas.length > 1) return res.send({ message: 'Already data is there!' });
 
         if (aboutDatas.length < 1) {
             const newData = new About(req.body);
@@ -38,6 +42,7 @@ const update = async (req, res) => {
             });
         }
     } catch (error) {
+        console.log(error.messsage)
         res.json({
             error: error.message,
             message: "Failed to create About",
