@@ -1,21 +1,21 @@
-import React from 'react'
-import Footer from './Footer/Footer'
-import Header from './Header/Header'
+import React from "react";
+import Footer from "./Footer/Footer";
+import Header from "./Header/Header";
 
 type Props = {
-    children: React.ReactNode;
+  children: React.ReactNode;
 };
 
 const LandingLayout = ({ children }: Props) => {
-    return (
-        <>
-            {/* Header space fillout section-- */}
-            <div className="lg:h-[70px] h-[50px]" ></div >
-            <Header />
-            {children}
-            <Footer />
-        </>
-    )
-}
+  return (
+    <>
+      {/* Header space fillout section-- */}
+      <div className="lg:h-[70px] h-[50px]"></div>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
+};
 
-export default LandingLayout
+export default LandingLayout;

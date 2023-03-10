@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Home from '@views/Home/Home'
+import Head from "next/head";
+import Home from "@views/Home/Home";
 
 export default function HomePage() {
   return (
@@ -12,8 +12,8 @@ export default function HomePage() {
       </Head>
 
       <main>
-       <Home />
+        <Home />
       </main>
     </>
-  )
+  );
 }

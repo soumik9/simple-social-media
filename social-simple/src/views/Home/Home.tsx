@@ -1,13 +1,12 @@
-import React from 'react'
+import React from "react";
+import Post from "./components/Post";
 
-type Props = {}
-
-const Home = (props: Props) => {
+const Home = () => {
   return (
     <div>
-      <h1>home</h1>
+      <Post />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

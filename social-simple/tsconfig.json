@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -20,56 +16,22 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@public/*": [
-        "public/*"
-      ],
-      "@public": [
-        "public"
-      ],
-      "@styles/*": [
-        "src/styles/*"
-      ],
-      "@styles": [
-        "src/styles"
-      ],
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@components": [
-        "src/components"
-      ],
-      "@views/*": [
-        "src/views/*"
-      ],
-      "@views": [
-        "src/views"
-      ],
-      "@admin/*": [
-        "src/views/admin/*"
-      ],
-      "@admin": [
-        "src/views/admin"
-      ],
-      "@landing/*": [
-        "src/views/landing/*"
-      ],
-      "@landing": [
-        "src/views/landing"
-      ],
-      "@config/*": [
-        "src/config/*"
-      ],
-      "@config": [
-        "src/config"
-      ]
+      "@public/*": ["public/*"],
+      "@public": ["public"],
+      "@styles/*": ["src/styles/*"],
+      "@styles": ["src/styles"],
+      "@components/*": ["src/components/*"],
+      "@components": ["src/components"],
+      "@views/*": ["src/views/*"],
+      "@views": ["src/views"],
+      "@admin/*": ["src/views/admin/*"],
+      "@admin": ["src/views/admin"],
+      "@landing/*": ["src/views/landing/*"],
+      "@landing": ["src/views/landing"],
+      "@config/*": ["src/config/*"],
+      "@config": ["src/config"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
