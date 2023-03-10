@@ -16,8 +16,8 @@ export const encodedAdress: string = 'aHR0cHM6Ly9nb28uZ2wvbWFwcy9vZ0VEV3NYUllTNH
 
 export const homeUrl: string = "/";
 export const aboutUrl: string = "/about";
-export const caseStudyUrl: string = "/case-study";
-export const contactUrl: string = "/contact-us";
+export const messageUrl: string = "/message";
+export const mediaUrl: string = "/media";
 
 export const navItems: navItemType[] = [
     {
@@ -32,13 +32,13 @@ export const navItems: navItemType[] = [
     },
     {
         _id: 'navItem_3',
-        title: 'Case Study',
-        url: caseStudyUrl
+        title: 'Media',
+        url: mediaUrl
     },
     {
         _id: 'navItem_4',
-        title: 'Contact',
-        url: contactUrl
+        title: 'Message',
+        url: messageUrl
     },
 ]
 
@@ -50,27 +50,27 @@ export const footerUserfulItems: navItemType[] = [
     },
     {
         _id: 'footUseful_2',
-        title: 'Case Study',
-        url: caseStudyUrl,
+        title: 'Media',
+        url: mediaUrl,
     },
     {
         _id: 'footUseful_3',
-        title: 'Contact Me',
-        url: contactUrl,
+        title: 'Message',
+        url: messageUrl,
     },  
     {
         _id: 'footUseful_4',
         title: 'Terms & Conditions',
-        url: contactUrl,
+        url: '#',
     },  
     {
         _id: 'footUseful_5',
         title: 'Privacy & Policy',
-        url: contactUrl,
+        url: '#',
     },  
     {
         _id: 'footUseful_6',
         title: 'Contact Us',
-        url: contactUrl,
+        url: '#',
     },
 ]

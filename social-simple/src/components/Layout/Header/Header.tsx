@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import NavItem from './partials/NavItem';
-import SocialItems from './partials/SocialItems';
 import useHideBodyScroll from 'src/hooks/useHideBodyScroll';
 import { navItemType } from '@config/types/types';
-import { githubUrl, homeUrl, navItems } from '@config/constants';
+import { homeUrl, navItems } from '@config/constants';
 import Hamburger from '@components/Icons/global/Hamburger';
 import Cross from '@components/Icons/global/Cross';
 import Link from 'next/link';
@@ -16,14 +15,11 @@ const Header = (props: Props) => {
 
     // states
     const [showSideNav, setShowSideNav] = useState(false);
+
     // handlers
     const handleSideNav = (): void => setShowSideNav(!showSideNav);
 
     useHideBodyScroll(showSideNav);
-
-    const [play, setPlay] = useState({
-        sIcon: false,
-    });
 
     return (
         <>

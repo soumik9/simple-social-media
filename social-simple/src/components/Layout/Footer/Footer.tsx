@@ -1,32 +1,12 @@
-import { address, emailAcc, encodedAdress, encodedEmail, footerUserfulItems, mobileNumber } from '@config/constants'
-import { navItemType } from '@config/types/types'
+import { footerUserfulItems } from '@config/constants'
 import { Typography } from '@mui/material'
-import React, { useState } from 'react'
+import React from 'react'
 import FooterLinksDiv from './partials/FooterLinksDiv'
-import DesktopFollowMe from './partials/DesktopFollowMe'
-import DetailsItem from './partials/DetailsItem'
 import { useRouter } from 'next/router'
 
-type Props = {}
-
-const Footer = (props: Props) => {
+const Footer = () => {
 
     const router = useRouter();
-
-    // states
-    const [play, setPlay] = useState({ wakieIcon: false, emailIcon: false, locationIcon: false });
-
-    const sendMail = () => {
-        router.push('mailto:'.concat(atob(encodedEmail)));
-    };
-
-    const phoneCall = () => {
-        router.push('tel:'.concat(atob(encodedEmail)));
-    };
-
-    const adressFind = () => {
-        router.push(atob(encodedAdress));
-    };
 
     return (
         <>
