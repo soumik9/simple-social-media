@@ -2,11 +2,8 @@ import { footerUserfulItems } from '@config/constants'
 import { Typography } from '@mui/material'
 import React from 'react'
 import FooterLinksDiv from './partials/FooterLinksDiv'
-import { useRouter } from 'next/router'
 
 const Footer = () => {
-
-    const router = useRouter();
 
     return (
         <>
@@ -33,14 +30,14 @@ const Footer = () => {
                             <div className='mt-7 md:mt-0 flex flex-col items-center md:block'>
                                 <FooterLinksDiv
                                     title='Useful Links'
-                                    array={footerUserfulItems.slice(0, 3)}
+                                    array={footerUserfulItems.slice(0, 3) || []}
                                 />
                             </div>
 
                             <div className='mt-8 md:mt-0 flex flex-col items-center md:block'>
                                 <FooterLinksDiv
                                     title='Legal'
-                                    array={footerUserfulItems.slice(3, 6)}
+                                    array={footerUserfulItems.slice(3, 6) || []}
                                 />
                             </div>
                         </div>
